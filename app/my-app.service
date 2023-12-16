@@ -1,0 +1,22 @@
+[Unit]
+Description=my-app
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=$WHOAMI
+ExecStart=$NODE $DIR/$APP 15000
+ExecStop=$NODE $DIR/$APP_KILLER 30000
+Restart=always
+RestartSec=10
+# ExecStart=$NODE $DIR/$APP 15000 $(whoami) $(hostname) # command expansion don't work directly on service file
+# ExecStop=/bin/kill -15 $MAINPID # default behaviour
+# Restart=on-failure (non-zero status)
+
+# https://unix.stackexchange.com/a/605539
+# TimeoutStopSec=90 (default)
+TimeoutStopSec=120
+
+[Install]
+WantedBy=default.target

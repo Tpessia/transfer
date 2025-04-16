@@ -1,11 +1,11 @@
-git config --global --add --bool push.autoSetupRemote true
+# git config --global --add --bool push.autoSetupRemote true
 # git config --list --show-origin
 # current=$(git branch --show-current)
 # lastMsg=$(git show -s --format=%B)
 
 function git_commit {
   msg=$1
-  git add -A && git commit -m $msg
+  git add -A && git commit -m "$msg"
 }
 export -f git_commit
 # alias git_commit="git_commit"

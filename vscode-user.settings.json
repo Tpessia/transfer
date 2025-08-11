@@ -1,0 +1,48 @@
+{
+    "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript][javascriptreact][typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[css][scss][less]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "explorer.compactFolders": false,
+    "extensions.ignoreRecommendations": true,
+    "security.workspace.trust.enabled": false,
+    "editor.hover.delay": 1000,
+    "editor.hover.sticky": true,
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "typescript.preferences.quoteStyle": "single",
+    "files.refactoring.autoSave": false,
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 2,
+    "terminal.integrated.automationProfile.windows": {},
+    "debug.javascript.autoAttachFilter": "disabled",
+    "workbench.editor.empty.hint": "hidden",
+    "git.enableSmartCommit": true,
+    "explorer.confirmPasteNative": false,
+    "codeium.enableCodeLens": false,
+    "diffEditor.maxComputationTime": 0,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "chat.editing.alwaysSaveWithGeneratedChanges": true,
+    "redhat.telemetry.enabled": false,
+    "yaml.schemas": {
+        "file:///home/pessia/.vscode/extensions/atlassian.atlascode-3.8.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "github.copilot.nextEditSuggestions.fixes": false,
+}

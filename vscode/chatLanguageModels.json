@@ -1,0 +1,80 @@
+[
+	{
+		"name": "Anthropic",
+		"vendor": "customendpoint",
+		"apiKey": "",
+		"apiType": "messages",
+		"models": [
+			{
+				"id": "claude-sonnet-5-5",
+				"name": "Sonnet 5.5",
+				"url": "https://api.anthropic.com/v1/messages",
+				"toolCalling": true,
+
+				"streaming": true,
+				"maxInputTokens": 300000,
+				"maxOutputTokens": 30000,
+				"supportsReasoningEffort": [
+					"low",
+					"medium",
+					"high"
+				],
+				"requestHeaders": {
+					"x-api-key": ""
+				}
+			},
+			{
+				"id": "claude-opus-5-5",
+				"name": "Opus 5.5",
+				"url": "https://api.anthropic.com/v1/messages",
+				"toolCalling": true,
+				"vision": true,
+				"streaming": true,
+				"maxInputTokens": 300000,
+				"maxOutputTokens": 30000,
+				"supportsReasoningEffort": [
+					"low",
+					"medium",
+					"high"
+				],
+				"requestHeaders": {
+					"x-api-key": ""
+				}
+			}
+		],
+		"settings": {
+			"claude-sonnet-5-5": {
+				"reasoningEffort": "medium"
+			}
+		}
+	},
+	{
+		"name": "LocalAI",
+		"vendor": "customendpoint",
+		"apiKey": "sk-local",
+		"apiType": "chat-completions",
+		"models": [
+			{
+				"id": "local-ai",
+				"name": "LocalAI",
+				"url": "http://127.0.0.1:8080/v1/chat/completions",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 125000,
+				"maxOutputTokens": 25000,
+				"thinking": true,
+				"supportsReasoningEffort": [
+					"low",
+					"medium",
+					"high"
+				],
+				"reasoningEffortFormat": "chat-completions"
+			}
+		],
+		"settings": {
+			"local-ai": {
+				"reasoningEffort": "low"
+			}
+		}
+	}
+]

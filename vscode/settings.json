@@ -44,5 +44,47 @@
         "file:///home/pessia/.vscode/extensions/atlassian.atlascode-3.8.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "github.copilot.nextEditSuggestions.enabled": false,
-    "github.copilot.nextEditSuggestions.fixes": false,
+    "github.copilot.nextEditSuggestions.fixes": false
+}
+
+
+{
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.startupEditor": "none",
+    "terminal.integrated.initialHint": false,
+    "files.hotExit": "onExitAndWindowClose",
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.hideOnboarding": true,
+    "claudeCode.allowDangerouslySkipPermissions": true,
+    "claudeCode.initialPermissionMode": "bypassPermissions",
+    "chat.byokUtilityModelDefault": "mainAgent",
+    "chat.mcp.discovery.enabled": {
+        "claude-desktop": true
+    },
+    "git.repositoryScanMaxDepth": 3,
+    "issueReporter.wizard.fullWorkspaceScan": false,
+    "git.autoRepositoryDetection": "subFolders",
+    "git.repositoryScanIgnoredFolders": [
+        "node_modules",
+        "repos-tmp"
+    ],
+    "chat.viewSessions.orientation": "stacked",
+    "chat.mcp.gallery.enabled": true,
+    "chat.agent.sandbox.enabled": "on",
+    "chat.permissions.default": "autoApprove",
+    "chat.defaultConfiguration": {
+        "mode": "interactive",
+        "approvals": "allowAll"
+    },
+    // "chat.defaultModel": "claude-opus-5-5",
+    "chat.defaultToCopilotHarness": false,
+    "chat.editor.preferCopilotHarness": false,
+    "chat.newSession.defaultMode": "Infra",
+    "chat.requestQueuing.defaultAction": "queue",
+    "chat.agent.maxRequests": 100,
+    "chat.implicitContext.suggestedContext": true,
+    "chat.implicitContext.enabled": {
+        "panel": "never"
+    },
+    "security.workspace.trust.untrustedFiles": "open"
 }

@@ -6,7 +6,8 @@ set -euo pipefail
 CODE_DIR="${1:-$HOME/code/.docs}"
 CODE_DIR="${CODE_DIR%/}"
 LINKS="$CODE_DIR/.links"
-VSCODE_USER="$HOME/Library/Application Support/Code/User"
+
+VSCODE_USER=$([ "$(uname -s)" = "Darwin" ] && echo "$HOME/Library/Application Support/Code/User" || echo "${XDG_CONFIG_HOME:-$HOME/.config}/Code/User")
 
 link() {
   mkdir -p "$(dirname "$2")"
@@ -14,6 +15,7 @@ link() {
   echo "$2 -> $1"
 }
 
+link "$HOME/.aws/config"                          "$LINKS/aws/config"
 link "$HOME/.aws/config"                          "$LINKS/aws/config"
 link "$HOME/.kube/config"                         "$LINKS/kube/config"
 link "$HOME/.claude.json"                         "$LINKS/claude/.claude.json"
